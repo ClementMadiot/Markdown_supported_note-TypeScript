@@ -30,6 +30,9 @@ React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built
 - [react-select](https://react-select.com/home)
 A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
 
+- [uuid](https://www.npmjs.com/package/uuid)
+The uuid package provides functionality for generating cryptographically secure, standard UUIDs with support for versions 1-6 UUIDs
+
 ## <br /> <a name="launch-app">🚀 Launch App</a>
 
 Follow these steps to set up the project locally on your machine.
