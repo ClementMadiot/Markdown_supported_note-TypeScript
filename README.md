@@ -1,20 +1,37 @@
 <div align="center">
   <!-- <a href="" target="_blanck"><img src="./public" alt=""></a> -->
+  <div>
+      <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+      <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />
+      <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="bootstrap"/>
+  </div>
   <h3 align="center">Markdown Supported Note Taking With Categories</h3>
 </div>
 
 ## <br /> 📋 <a name="table">Summary</a>
 
 - ✨ [Introduction](#introduction)
+- 🔋 [Features](#features)
 - 🛠 [Technology Used](#tech-stack)
 - 🚀 [Launch App](#launch-app)
-- 🎨 [Styling](#style)
 
 ## <br /> <a name="introduction">✨ Introduction</a>
 
-**[ENG]**
+**[ENG]** Welcome to my Markdown Supported Note Taking With Categories project! This application is designed to provide a flexible and efficient way to organize and manage your notes using Markdown syntax. With built-in support for categories, you can easily categorize your notes and quickly find the information you need.
 
-**[FR]**
+**[FR]** Bienvenue dans mon projet de prise de notes avec prise en charge de Markdown et catégories ! Cette application est conçue pour vous offrir un moyen flexible et efficace d'organiser et de gérer vos notes en utilisant la syntaxe Markdown. Grâce à la prise en charge intégrée des catégories, vous pouvez facilement catégoriser vos notes et trouver rapidement les informations dont vous avez besoin.
+
+## <a name="features">🔋 Features</a>
+
+👉 **Markdown Support**: Write your notes using Markdown for rich formatting, including headings, lists, code blocks, and more.
+
+👉 **Categories**: Organize your notes into categories to keep them well-structured and easily searchable.
+
+👉 **Intuitive Interface**: Enjoy a user-friendly interface that makes note-taking a breeze.
+
+👉 **Built with TypeScript**: The application is built using TypeScript for robust type safety and maintainability.
+
+👉 **Bootstrap Styling**: Leverage Bootstrap for a modern and responsive design.
 
 ## <br /> <a name="tech-stack">🛠 Technology Used</a>
 
