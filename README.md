@@ -18,14 +18,17 @@
 
 ## <br /> <a name="tech-stack">🛠 Technology Used</a>
 
+- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
+The react-router-dom package contains bindings for using React Router in web applications. Please see the Getting Started guide for more information on how to get started with React Router.
+
 - [bootstrap](https://getbootstrap.com/)
 Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.
 
 - [react-bootstrap](https://react-bootstrap.netlify.app/docs/getting-started/introduction)
 React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.
 
-- [react-router-dom](https://www.npmjs.com/package/react-router-dom)
-The react-router-dom package contains bindings for using React Router in web applications. Please see the Getting Started guide for more information on how to get started with React Router.
+- [react-select](https://react-select.com/home)
+A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
 
 ## <br /> <a name="launch-app">🚀 Launch App</a>
 
