@@ -4,8 +4,8 @@ import { Row, Col, Stack, Button, Form, Card, Badge } from "react-bootstrap";
 import ReactSelect from "react-select";
 import { Link } from "react-router-dom";
 // import types
-import { Tag } from "./App";
-import styles from "./styles/NotesList.module.css";
+import { Tag } from "../App";
+import styles from "../styles/NotesList.module.css";
 
 // NoteCard
 type SimplifiedNote = {
@@ -112,9 +112,15 @@ function NoteCard({ id, title, tags }: SimplifiedNote) {
         <Stack className="align-items-center justify-center h-100" gap={2}>
           <span className="fs-5">{title}</span>
           {tags.length > 0 && (
-            <Stack gap={1} direction="horizontal" className="justify-content-center flex-wrap">
-              {tags.map(tag => (
-                <Badge key={tag.id} className="text-truncate">{tag.label}</Badge>
+            <Stack
+              gap={1}
+              direction="horizontal"
+              className="justify-content-center flex-wrap"
+            >
+              {tags.map((tag) => (
+                <Badge key={tag.id} className="text-truncate">
+                  {tag.label}
+                </Badge>
               ))}
             </Stack>
           )}
