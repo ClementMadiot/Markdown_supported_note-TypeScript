@@ -50,6 +50,9 @@ A flexible and beautiful Select Input control for ReactJS with multiselect, auto
 - [uuid](https://www.npmjs.com/package/uuid)
 The uuid package provides functionality for generating cryptographically secure, standard UUIDs with support for versions 1-6 UUIDs
 
+- [react-markdown](https://www.npmjs.com/package/react-markdown/v/8.0.6)
+React component that can be given a string of markdown that it’ll safely render to React elements. You can pass plugins to change how markdown is transformed to React elements and pass components that will be used instead of normal HTML elements.
+
 ## <br /> <a name="launch-app">🚀 Launch App</a>
 
 Follow these steps to set up the project locally on your machine.
