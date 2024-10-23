@@ -5,7 +5,7 @@ import CreatableReactSelect from "react-select/creatable";
 import { v4 as uuidV4 } from "uuid";
 
 // import types
-import { Tag, NoteData } from "../App";
+import { Tag, NoteData } from "../../App";
 
 type NoteFormProps = {
   onSubmit: (data: NoteData) => void;

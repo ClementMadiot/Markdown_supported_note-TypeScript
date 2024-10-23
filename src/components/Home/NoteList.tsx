@@ -4,8 +4,8 @@ import { Row, Col, Stack, Button, Form, Card, Badge } from "react-bootstrap";
 import ReactSelect from "react-select";
 import { Link } from "react-router-dom";
 // import types
-import { Tag } from "../App";
-import styles from "../styles/NotesList.module.css";
+import { Tag } from "../../App";
+import styles from "../../styles/NotesList.module.css";
 
 // NoteCard
 type SimplifiedNote = {
@@ -43,7 +43,7 @@ export function NoteList({ availableTags, notes }: NoteListProps) {
         <Col>
           <h1>Note</h1>
         </Col>
-        <Col>
+        <Col xs="auto">
           <Stack gap={2} direction="horizontal">
             <Link to={"/new"}>
               <Button variant="primary">Create</Button>
