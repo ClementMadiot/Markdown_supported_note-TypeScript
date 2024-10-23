@@ -86,4 +86,4 @@ _yarn_
 yarn install
 ```
 
-> Once the dependencies are installed, start the project with the command `npm run dev`.# Markdown_nupported_note-TypeScript
+> Once the dependencies are installed, start the project with the command `npm run dev`.
