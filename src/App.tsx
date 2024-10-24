@@ -62,7 +62,12 @@ function App() {
     });
   }
 
-  // update the edit note
+  // handle tag creation to store them
+  function addTag(tag: Tag) {
+    setTags((prev) => [...prev, tag]);
+  }
+
+  // update the "Edit Note"
   function onUpdateNote(id: string, { tags, ...data }: NoteData) {
     setNotes((prevNotes) => {
       return prevNotes.map((note) => {
@@ -82,17 +87,33 @@ function App() {
     })
   }
 
-  // handle tag creation to store them
-  function addTag(tag: Tag) {
-    setTags((prev) => [...prev, tag]);
+  // update "Edit tags" modal
+  function updateTag(id: string, label: string): Tag {
+    setTags(prevTags => {
+      return prevTags.map(tag => {
+        if(tag.id === id){
+          return {...tag, label}
+        } else {
+          return tag
+        }
+      })
+    })
   }
+
+  // delete tag "Edit tags" modal
+  function deleteTag(id: string) {
+    setTags(prevTag => {
+      return prevTag.filter(tag => tag.id !== id)
+    })
+  }
+
 
   return (
     <Container className="my-4">
       <Routes>
         <Route
           path="/"
-          element={<NoteList notes={notesWithTags} availableTags={tags} />}
+          element={<NoteList notes={notesWithTags} availableTags={tags} deleteTag={deleteTag} updateTag={updateTag} />}
         />
         <Route
           path="/new"
