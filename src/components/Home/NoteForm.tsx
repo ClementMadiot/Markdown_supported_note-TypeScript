@@ -11,12 +11,19 @@ type NoteFormProps = {
   onSubmit: (data: NoteData) => void;
   onAddTag: (tag: Tag) => void;
   availableTags: Tag[];
-} & Partial<NoteData>
+} & Partial<NoteData>;
 
-export function NoteForm({ onSubmit, onAddTag, availableTags }: NoteFormProps) {
+export function NoteForm({
+  onSubmit,
+  onAddTag,
+  availableTags,
+  title = "",
+  markdown = "",
+  tags = [],
+}: NoteFormProps) {
   const titleRef = useRef<HTMLInputElement>(null);
   const markdownRef = useRef<HTMLTextAreaElement>(null);
-  const [selectTags, setSelectedTags] = useState<Tag[]>([]);
+  const [selectTags, setSelectedTags] = useState<Tag[]>(tags);
   // navigate to the previous page after save our note
   const navigate = useNavigate();
 
@@ -38,7 +45,7 @@ export function NoteForm({ onSubmit, onAddTag, availableTags }: NoteFormProps) {
           <Col>
             <Form.Group controlId="title">
               <Form.Label>Title</Form.Label>
-              <Form.Control ref={titleRef} required />
+              <Form.Control ref={titleRef} defaultValue={title} required />
             </Form.Group>
           </Col>
           {/* tags col  */}
@@ -72,7 +79,7 @@ export function NoteForm({ onSubmit, onAddTag, availableTags }: NoteFormProps) {
         {/* markdown col  */}
         <Form.Group controlId="markdown">
           <Form.Label>Body</Form.Label>
-          <Form.Control ref={markdownRef} required as={"textarea"} rows={15} />
+          <Form.Control ref={markdownRef} defaultValue={markdown} required as={"textarea"} rows={15} />
         </Form.Group>
         {/* buttons  */}
         <Stack direction="horizontal" gap={2} className="justify-content-end">

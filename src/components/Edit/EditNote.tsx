@@ -8,6 +8,7 @@ type EditNoteProps = {
   availableTags: Tag[];
 };
 
+
 export function EditNote({ onSubmit, onAddTag, availableTags }: EditNoteProps) {
   const note = useNote();
   return (
