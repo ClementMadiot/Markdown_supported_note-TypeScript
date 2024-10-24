@@ -1,5 +1,5 @@
 <div align="center">
-  <!-- <a href="" target="_blanck"><img src="./public" alt=""></a> -->
+  <img src="./src/assets/markdown.png" alt="markdown-home-page">
   <div>
       <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
       <img src="https://img.shields.io/badge/-TypeScript-black?style=for-the-badge&logoColor=white&logo=typescript&color=3178C6" alt="typescript" />

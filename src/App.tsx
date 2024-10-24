@@ -11,7 +11,7 @@ import { Note } from "./components/Show/Note";
 import { EditNote } from "./components/Edit/EditNote";
 // style
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+
 
 export type Note = {
   id: string;
@@ -88,7 +88,7 @@ function App() {
   }
 
   // update "Edit tags" modal
-  function updateTag(id: string, label: string): Tag {
+  function updateTag(id: string, label: string) {
     setTags(prevTags => {
       return prevTags.map(tag => {
         if(tag.id === id){

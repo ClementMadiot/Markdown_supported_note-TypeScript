@@ -79,7 +79,14 @@ export function NoteForm({
         {/* markdown col  */}
         <Form.Group controlId="markdown">
           <Form.Label>Body</Form.Label>
-          <Form.Control ref={markdownRef} defaultValue={markdown} required as={"textarea"} rows={15} />
+          <Form.Control
+            ref={markdownRef}
+            defaultValue={markdown}
+            required
+            as={"textarea"}
+            rows={15}
+            style={{ resize: "none" }}
+          />
         </Form.Group>
         {/* buttons  */}
         <Stack direction="horizontal" gap={2} className="justify-content-end">
