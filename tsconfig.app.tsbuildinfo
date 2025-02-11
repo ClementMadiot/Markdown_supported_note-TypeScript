@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/create/newnote.tsx","./src/components/edit/editnote.tsx","./src/components/home/noteform.tsx","./src/components/home/notelist.tsx","./src/components/show/note.tsx","./src/components/show/notelayout.tsx","./src/data/uselocalstrorage.ts"],"version":"5.6.3"}
